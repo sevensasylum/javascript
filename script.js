@@ -52,13 +52,13 @@ const birthYear = 1994;
 var age = 29;
 age = 30;
 
-console.log(age);*/
+console.log(age);
 
 //Basic Operators (Arithmatic) *, +, /, -
 
 const current = 2024;
 const ageSeven = current - 1994;
-const ageMary = current - 1974;
+const ageMary = current - 2019;
 console.log(ageSeven, ageMary);
 
 console.log(ageSeven * 3, ageMary/ 7, ageSeven + ageMary, 2 ** 3);
@@ -82,3 +82,48 @@ console.log(x);
 // Comparison operations >, >=, <=, <
 console.log(ageSeven < ageMary);
 console.log(ageMary >= 18);
+
+// store results its a boolean 
+const isFullAge = ageMary >= 18;
+console.log(current - 1991 > current - 2019); // so the way the program reads this line of code,
+// it wont just do it from left two right, it will do the substraction pn the ,left first and then the right an d then it will compare the results > using that operator.
+
+// Operator Precesdance
+const current = 2024;
+const ageSeven = current - 1994;
+const ageMary = current - 2019;
+
+console.log(current - 1991 > current - 2019);
+
+console.log(25 - 10 - 5);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
+
+// Find the average
+
+const averageAge = ageSeven + ageMary / 2;
+console.log(ageSeven, ageMary, averageAge);
+
+//challenge 1 that I answered on Udemys Platform:
+
+//this is "True"
+//const massMark = 78;
+//const massJohn = 92;    
+//const heightMark = 1.69;
+//const heightJohn = 1.95;
+
+//this is "False"
+const massMark = 95;
+const massJohn = 85;
+const heightMark = 1.88;
+const heightJohn = 1.76;
+      
+const BMIMark = massMark / (heightMark ** 2);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+      
+const markHigherBMI = BMIMark >= BMIJohn;
+      
+console.log(BMIMark, BMIJohn);
+console.log(markHigherBMI);*/
