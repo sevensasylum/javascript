@@ -258,4 +258,22 @@ if(height){
 //Equality Operators == vs ===
 
 const age = 18;
-if(age === 18) console.log('You just became an adult :D');
+if(age === 18) console.log('You just became an adult :D (strict)');
+
+if(age == 18) console.log('You just became an adult :D (loosey)');
+
+const favorite = Number (prompt("What's your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if(favorite == 33) {
+    console.log('Cool! 33 is a spiritual number!');
+} else if(favorite === 7) {
+    console.log('7 is also a spiritual number');
+}else if(favorite === 9){
+    console.log('9 is also a spiritual number');
+} else {
+    console.log('Number is not 33 nor 7 nor 9')
+}
+
+
