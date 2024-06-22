@@ -438,27 +438,26 @@ while (dice !== 6){
 
     if(dice === 6) console.log('Loop is about to end...');
 }
-*/
+
 
 //Challenge 4
 
 const calcTip = function (bill) {
-    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
-  }
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+};
 
-  
 const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 const tips = [];
 const totals = [];
 
-for(let i = 0; i < bills.length; i++){
-   const tip = calcTip(bills[i]);
-   
-   tips.push(tip);
-   totals.push(tip + bills[i]);
+for (let i = 0; i < bills.length; i++) {
+  const tip = calcTip(bills[i]);
+
+  tips.push(tip);
+  totals.push(tip + bills[i]);
 }
 
-console.log(bills, tips, totals );
+console.log(bills, tips, totals);
 
 const calcAverage = function (arr) {
   let sum = 0;
@@ -467,8 +466,44 @@ const calcAverage = function (arr) {
     sum += arr[i];
   }
   return sum / arr.length;
-}
- 
+};
+
 console.log(calcAverage([2, 3, 7]));
 console.log(calcAverage(totals));
 console.log(calcAverage(tips));
+
+console.log('I am the best programmer, Talk to yo momma and not to me :}}');
+
+const x = 23;
+console.log('Tell me');
+console.log('Look over here come follow me');
+console.log(`Tell me, how'd get that in those jeans?`);
+
+
+//trying in video challenge alone again(needed help a tad bit)
+//"Jonas is a 46-year ol teacher, and he has a drivers license."
+
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  birthYear: 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+  hasDriversLicense: true,
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${
+      jonas.job
+    }, and he has ${this.hasDriversLicense ? 'a' : 'no'} drivers license.`;
+  },
+};
+
+console.log(jonas.calcAge());
+console.log(jonas.age);
+console.log(jonas.getSummary());
+*/
