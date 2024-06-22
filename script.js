@@ -409,7 +409,7 @@ for(let exercise = 1; exercise < 4; exercise++){
 
 
 for(let rep = 1; rep < 6; rep++){
-    console.log(`Lifting weights repetition ${rep} 🏋️`);
+    console.log(`Lifting weights repetition ${rep} 🏋️`); // a loop within a loop and thats why it prints to the console like that.
     }
 }
 
@@ -426,12 +426,16 @@ for(let rep = 1; rep < 6; rep++){
 
 // let rep = 1;
 // while(rep <= 10){
-// console.log(`WHILE-LOOP: Lifting weights repetition ${rep} 🏋️`);
+// console.log(`WHILE-LOOP: Lifting weights repetition ${rep} 🏋️`);// this is the same as the one above. exact! just a while loop
 //     rep++;
 // }
 
-let dice = Math.trunc(Math.random() * 6) + 1;
+//roll a dice and keep rolling until we roll a 6 and when it lands on 6 itll stop. They will be random number each roll. 
+**this does not depend on a counter but it does a random variable
 
+let dice = Math.trunc(Math.random() * 6) + 1;// creates a random number between 1 and 5. Math.trunc get rid of the decimals behind the value because Math.random produces decimal numbers.
+
+//keep running the loop until it lands on 6 andwhen it does, loop stops.
 while (dice !== 6){
     console.log(`You rolled a ${dice}`);
     dice = Math.trunc(Math.random() * 6) + 1;
